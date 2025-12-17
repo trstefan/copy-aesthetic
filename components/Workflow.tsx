@@ -1,10 +1,12 @@
 import React from "react";
 import { Layout, Monitor, Terminal } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useIntersectionReveal } from "@/hooks/useIntersactionReveal";
 
 const Workflow = () => {
   const [currentWorkflowStep, setCurrentWorkflowStep] = useState(0);
 
+  useIntersectionReveal();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWorkflowStep((prev) => (prev + 1) % 3);
@@ -17,7 +19,7 @@ const Workflow = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24">
           <div className="w-full md:w-1/2 reveal-on-scroll">
-            <h2 className="text-4xl md:text-5xl font-bold mb-10 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold mb-10 leading-tight text-white">
               Streamlined <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-400">
                 Creative Workflow
