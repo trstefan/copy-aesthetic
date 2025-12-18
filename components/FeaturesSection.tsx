@@ -1,9 +1,8 @@
-import React from "react";
 import { Zap, Palette, Monitor, Wand2, ArrowRight } from "lucide-react";
-
+import Link from "next/link";
 const FeaturesSection = () => {
   return (
-    <section className="py-24 relative bg-slate-900/40 backdrop-blur-sm border-y border-white/5">
+    <section className="py-24 px-12 relative bg-slate-900/40 backdrop-blur-sm border-y border-white/5">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -62,13 +61,16 @@ const FeaturesSection = () => {
         </div>
 
         <div className="text-center reveal-on-scroll delay-200">
-          <button className="inline-flex items-center gap-2 text-blue-400 font-bold hover:text-blue-300 transition-colors group">
+          <Link
+            href="/theme-preview"
+            className="inline-flex items-center gap-2 text-blue-400 font-bold hover:text-blue-300 transition-colors group"
+          >
             Browse All Aesthetics{" "}
             <ArrowRight
               size={18}
               className="group-hover:translate-x-1 transition-transform"
             />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

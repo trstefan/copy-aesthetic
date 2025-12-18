@@ -9,7 +9,7 @@ interface PromptShowcaseProps {
 
 const PromptShowcase = ({ showcaseStyled }: PromptShowcaseProps) => {
   return (
-    <section className="py-24 bg-slate-950/80 backdrop-blur-xl relative overflow-hidden">
+    <section className="py-24 px-12 bg-slate-950/80 backdrop-blur-xl relative overflow-hidden ">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 reveal-on-scroll">

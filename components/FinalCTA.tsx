@@ -1,5 +1,6 @@
 import React from "react";
 import { Zap } from "lucide-react";
+import Link from "next/link";
 
 const FinalCTA = () => {
   return (
@@ -10,13 +11,13 @@ const FinalCTA = () => {
           Start your next project with <br className="hidden md:block" />{" "}
           perfect visual clarity.
         </h2>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="px-10 py-5 bg-white text-slate-900 rounded-full text-xl font-bold hover:bg-blue-50 transition-all shadow-xl hover:scale-105 active:scale-95 flex items-center gap-3">
+        <div className="flex items-center justify-center">
+          <Link
+            href="/theme-preview"
+            className="px-10 py-5 bg-white text-slate-900 rounded-full text-xl font-bold hover:bg-blue-50 transition-all shadow-xl hover:scale-105 active:scale-95 flex items-center gap-3 hover:cursor-pointer"
+          >
             Launch Previewer <Zap size={20} fill="currentColor" />
-          </button>
-          <button className="px-10 py-5 bg-slate-900 border border-white/20 text-white rounded-full text-xl font-bold hover:bg-slate-800 transition-all hover:scale-105 active:scale-95">
-            See Docs
-          </button>
+          </Link>
         </div>
       </div>
     </section>

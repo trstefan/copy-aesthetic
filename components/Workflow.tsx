@@ -15,7 +15,7 @@ const Workflow = () => {
   }, []);
 
   return (
-    <section className="py-24 border-b border-white/5">
+    <section className="py-24 px-12 border-b border-white/5">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24">
           <div className="w-full md:w-1/2 reveal-on-scroll">
