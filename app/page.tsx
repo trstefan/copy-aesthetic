@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/FinalCTA";
 import PromptShowcase from "@/components/PromptShowcase";
@@ -13,7 +13,15 @@ import HeroSection from "@/components/hero/HeroSection";
 export default function Home() {
   const [showcaseStyled, setShowcaseStyled] = useState(false);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowcaseStyled((prev) => !prev);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
+
     <PageShell>
       {/* Fixed 3D Canvas Background */}
       {/* Overlay Gradient for readability - Increased opacity for better contrast */}
