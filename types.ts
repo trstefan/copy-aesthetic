@@ -23,8 +23,3 @@ export interface Theme {
   promptShort: string;
   promptLong: string;
 }
-
-export enum AppView {
-  LANDING = 'LANDING',
-  PREVIEW = 'PREVIEW'
-}
