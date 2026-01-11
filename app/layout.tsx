@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Copy Aesthetic – Theme Preview & UI Style Prompts",
+  title: "Copy Aesthetics – Theme Preview & UI Style Prompts",
   description:
     "Preview curated UI themes, see them applied to a live mock interface, and instantly copy ready-made aesthetic prompts for your design or AI workflow.",
   keywords: [

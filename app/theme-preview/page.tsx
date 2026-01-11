@@ -82,7 +82,7 @@ const ThemePreview = () => {
             <ArrowLeft size={18} className="sm:w-5 sm:h-5" />
           </button>
           <h1 className="text-base sm:text-lg md:text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-blue-600 to-purple-600 truncate">
-            Copy Aesthetic
+            Copy Aesthetics
           </h1>
         </div>
 

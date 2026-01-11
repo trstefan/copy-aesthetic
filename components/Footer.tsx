@@ -29,7 +29,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link
+                  href="https://github.com/trstefan/copy-aesthetic"
+                  className="hover:text-white transition-colors"
+                >
                   Github
                 </Link>
               </li>
